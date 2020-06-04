@@ -66,6 +66,12 @@ main{
 
 }
 
+::placeholder{
+    font-size: 900;
+    color: grey;
+    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+    text-align: center;
+}
 /*Box left*/
 .box-left{
     background-color:white;
@@ -86,8 +92,16 @@ main{
 
    
     height: 80px;
+    
 
 }    
+
+#bars{
+    height: 50px;
+    margin: auto 0;
+    display: none;
+}
+
 nav{
     display: flex;
     align-items: center;
@@ -111,7 +125,7 @@ nav li::after{
     content: "";
     display: block;
     border-bottom: 3px solid transparent;
-    width: 70%;
+    width: 0%;
     margin: 0 auto;
     padding-top: .3rem;
 }
@@ -121,9 +135,14 @@ nav a{
     color: black;
 }
 
+nav a:hover{
+    transition: .4s;
+    color: white;
+}
+
 nav li:hover::after{
     transition: .4s;
-
+    width: 80%;
     border-color: black;
 
   
@@ -260,6 +279,7 @@ nav li:hover::after{
     margin: 0 1.5rem;
     overflow: hidden;
     font-weight: 700;
+    margin-bottom: 40px;
 
 }
 
@@ -270,6 +290,7 @@ nav li:hover::after{
     
     border-radius: 5px;
     height: 100% ;
+
 }
 
 .container-element .description{
@@ -298,4 +319,80 @@ nav li:hover::after{
     justify-content: center;
 }
 
+@media only screen and (max-width:980px){
+    .landing{
+        /*border: 5px solid black;*/
+        display: block;
+        /*grid-template-rows: 5fr 1fr 2fr;
+        grid-template-columns: 1fr 5fr repeat(2,1fr) 3fr ;
+        min-height: 700px;
+        height: 100vh;
+        width: 100%;*/
+    
+    }
+
+    .box-left{
+        height: 90%;
+    }
+
+    .box-right{
+        display: none;
+    }
+
+    #search{
+        position: absolute;
+        bottom: 0;
+        width: 70%;
+        min-height: 95px;
+    }
+    #find-button{
+        position: absolute;
+        right: 5%;
+        bottom: 0;
+        min-height: 95px;
+        width: 20%;
+        border-radius: 0;
+    }
+
+    #resp-menu{
+        display: block;
+        
+    }
+
+    nav{
+        background-color: rgb(255, 255, 255);
+        display: none;
+        transition: 1s;
+    }
+
+    nav li{
+        display: block;
+        margin: 1rem 0;
+        
+    }
+
+    nav a:hover{
+        color: grey;
+    }
+
+    nav li:hover::after{
  
+        width: 10%;
+   
+    }
+
+    #bars{
+
+        display: inline-block;
+        position: absolute;
+        right: 10%;
+        top:25px;
+    }
+
+    #bars:hover{
+        opacity: .5;
+        cursor: pointer;
+
+    }
+
+}

@@ -260,6 +260,7 @@ nav li:hover::after{
     margin: 0 1.5rem;
     overflow: hidden;
     font-weight: 700;
+    margin-bottom: 40px;
 
 }
 
@@ -270,6 +271,7 @@ nav li:hover::after{
     
     border-radius: 5px;
     height: 100% ;
+
 }
 
 .container-element .description{
@@ -298,4 +300,28 @@ nav li:hover::after{
     justify-content: center;
 }
 
- 
+@media only screen and (max-width:980px){
+    .landing{
+        /*border: 5px solid black;*/
+        display: block;
+        /*grid-template-rows: 5fr 1fr 2fr;
+        grid-template-columns: 1fr 5fr repeat(2,1fr) 3fr ;
+        min-height: 700px;
+        height: 100vh;
+        width: 100%;*/
+    
+    }
+
+    .box-left{
+        height: 90%;
+    }
+
+    .box-right{
+        display: none;
+    }
+
+    #search{
+        width: 80%;
+        height: 80px;
+    }
+}

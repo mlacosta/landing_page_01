@@ -13,3 +13,18 @@ const element = document.getElementById("container");*/
     ]
 );*/
 
+const menu = document.getElementById("bars");
+const nav = document.getElementById("responsive-menu");
+let toggle = false;
+
+menu.addEventListener('click',()=>{
+
+    toggle = !toggle
+    if (toggle){
+        nav.style.display = "block";
+    }else{
+        nav.style.display = "none";
+    }
+    
+    
+})

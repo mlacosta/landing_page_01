@@ -92,8 +92,16 @@ main{
 
    
     height: 80px;
+    
 
 }    
+
+#bars{
+    height: 50px;
+    margin: auto 0;
+    display: none;
+}
+
 nav{
     display: flex;
     align-items: center;
@@ -117,7 +125,7 @@ nav li::after{
     content: "";
     display: block;
     border-bottom: 3px solid transparent;
-    width: 70%;
+    width: 0%;
     margin: 0 auto;
     padding-top: .3rem;
 }
@@ -127,9 +135,14 @@ nav a{
     color: black;
 }
 
+nav a:hover{
+    transition: .4s;
+    color: white;
+}
+
 nav li:hover::after{
     transition: .4s;
-
+    width: 80%;
     border-color: black;
 
   
@@ -339,6 +352,47 @@ nav li:hover::after{
         min-height: 95px;
         width: 20%;
         border-radius: 0;
+    }
+
+    #resp-menu{
+        display: block;
+        
+    }
+
+    nav{
+        background-color: rgb(255, 255, 255);
+        display: none;
+        transition: 1s;
+    }
+
+    nav li{
+        display: block;
+        margin: 1rem 0;
+        
+    }
+
+    nav a:hover{
+        color: grey;
+    }
+
+    nav li:hover::after{
+ 
+        width: 10%;
+   
+    }
+
+    #bars{
+
+        display: inline-block;
+        position: absolute;
+        right: 10%;
+        top:25px;
+    }
+
+    #bars:hover{
+        opacity: .5;
+        cursor: pointer;
+
     }
 
 }

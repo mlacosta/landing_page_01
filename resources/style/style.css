@@ -322,6 +322,14 @@ nav li:hover::after{
 
     #search{
         width: 80%;
-        height: 80px;
+        height: 100%;
     }
+    #find-button{
+        position: absolute;
+        right: 5%;
+        bottom: 0;
+        height: 100px;
+        width: 20%;
+    }
+
 }

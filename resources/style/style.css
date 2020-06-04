@@ -66,6 +66,12 @@ main{
 
 }
 
+::placeholder{
+    font-size: 900;
+    color: grey;
+    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+    text-align: center;
+}
 /*Box left*/
 .box-left{
     background-color:white;
@@ -321,15 +327,18 @@ nav li:hover::after{
     }
 
     #search{
-        width: 80%;
-        height: 100%;
+        position: absolute;
+        bottom: 0;
+        width: 70%;
+        min-height: 95px;
     }
     #find-button{
         position: absolute;
         right: 5%;
         bottom: 0;
-        height: 100px;
+        min-height: 95px;
         width: 20%;
+        border-radius: 0;
     }
 
 }

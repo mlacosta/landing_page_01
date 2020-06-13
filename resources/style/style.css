@@ -142,13 +142,15 @@ nav a:hover{
     color: white;
 }
 
-nav li:hover::after{
+/*nav li:hover::after{
     transition: .4s;
     width: 80%;
     border-color: black;
 
   
-}
+}*/
+
+
 
 .info{
     
@@ -403,5 +405,22 @@ nav li:hover::after{
 
     }
 
+    nav ul{
+        margin-right: 0;
+    }
+
+    nav li{
+        margin: 0;
+        padding: 16px 0;
+    }
+    nav li:hover{
+        transition: .5s;
+        background-color:grey;
+        width: 100%;
+    }
+
+    nav a:hover{
+        color: white;
+    }
 
 }

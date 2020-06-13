@@ -123,14 +123,14 @@ nav li{
 
 }
 
-nav li::after{
+/*nav li::after{
     content: "";
     display: block;
     border-bottom: 3px solid transparent;
     width: 0%;
     margin: 0 auto;
     padding-top: .3rem;
-}
+}*/
 
 nav a{
     text-decoration: none;
